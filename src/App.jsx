@@ -11,14 +11,15 @@ const App = () => {
   const [userData, setUserData] = useContext(AuthContext);
 
   useEffect(() => {
-    // localStorage.clear();
-    // setLocalStorage();
+    localStorage.clear();
+    setLocalStorage();
     if (userData) {
       const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
       if (loggedInUser) {
         setUser(loggedInUser.role);
         setLoggedInUserData(loggedInUser.data);
         console.log("Already logged in - ", loggedInUser);
+        console.log("UserData called");
       }
     }
   }, [userData]);

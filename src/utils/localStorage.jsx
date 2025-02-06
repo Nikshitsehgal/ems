@@ -10,7 +10,7 @@ const employees = [
         taskDescription: "Compile data and create the monthly sales report.",
         taskDate: "2025-02-01",
         category: "Reporting",
-        active: true,
+        active: false,
         newTask: true,
         completed: false,
         failed: false,
@@ -38,7 +38,7 @@ const employees = [
     ],
     taskCount: {
       total: 3,
-      active: 1,
+      active: 0,
       newTask: 1,
       completed: 1,
       failed: 1,

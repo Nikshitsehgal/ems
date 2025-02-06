@@ -8,14 +8,26 @@ const TaskList = ({ employeeData }) => {
   return (
     <div
       id="tasklist"
-      className="h-[20rem] w-full flex items-center justify-between gap-5 flex-wrap py-5 mt-10"
+      className="h-[20rem] w-full flex items-center justify-start gap-5 flex-wrap py-5 mt-10"
     >
       {employeeData?.tasks.map((task, index) => {
         if (task.active) {
-          return <AcceptTask key={index} task={task} />;
+          return (
+            <AcceptTask
+              key={index}
+              task={task}
+              firstName={employeeData.firstName}
+            />
+          );
         }
         if (task.newTask) {
-          return <NewTask key={index} task={task} />;
+          return (
+            <NewTask
+              key={index}
+              task={task}
+              firstName={employeeData.firstName}
+            />
+          );
         }
         if (task.completed) {
           return <CompleteTask key={index} task={task} />;
