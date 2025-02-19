@@ -2,7 +2,7 @@ import React from "react";
 
 const TaskListNumbers = ({ employeeData }) => {
   return (
-    <div className="flex mt-20 justify-between gap-5">
+    <div className="flex mt-10 md:mt-20 justify-between gap-5 flex-wrap md:flex-nowrap text-center md:text-left">
       <div className="rounded-xl w-[45%] px-9 py-6 border-3 border-blue-400">
         <h2 className="text-3xl font-semibold">
           {employeeData?.taskCount?.newTask}

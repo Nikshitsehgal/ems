@@ -7,7 +7,7 @@ const AllTask = () => {
   return (
     <div
       id="tasklist"
-      className="bg-[#1c1c1c p-5 mt-5 rounded overflow-auto text-center"
+      className="bg-[#1c1c1c pb-5 md:p-5 mt-5 rounded overflow-auto text-center"
     >
       <h1 className="text-3xl mb-5 text-center font-bold">
         Employees Task's List

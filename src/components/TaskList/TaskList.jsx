@@ -8,7 +8,7 @@ const TaskList = ({ employeeData }) => {
   return (
     <div
       id="tasklist"
-      className="h-[20rem] w-full flex items-center justify-start gap-5 flex-wrap py-5 mt-10"
+      className="h-[20rem] w-full flex items-center justify-center md:justify-start gap-5 flex-wrap py-5 mt-10"
     >
       {employeeData?.tasks.map((task, index) => {
         if (task.active) {
