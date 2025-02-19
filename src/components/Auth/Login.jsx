@@ -16,7 +16,7 @@ const Login = ({ handleLogin }) => {
       <h1 className="text-center mb-20 text-5xl font-semibold">
         Employee Management System
       </h1>
-      <div className="border-2 border-emerald-600 p-16 rounded-xl">
+      <div className="border-2 border-cyan-600 p-16 rounded-xl">
         <h2 className="text-center mb-7 text-3xl">Login</h2>
         <form
           onSubmit={(e) => submitHandler(e)}
@@ -24,7 +24,7 @@ const Login = ({ handleLogin }) => {
         >
           <input
             required
-            className="outline-none border-2 border-emerald-600 py-2 px-5 rounded-full"
+            className="outline-none border-2 border-cyan-600 py-2 px-5 rounded-full"
             type="email"
             placeholder="Enter your email"
             value={email}
@@ -34,7 +34,7 @@ const Login = ({ handleLogin }) => {
           />
           <input
             required
-            className="outline-none border-2 border-emerald-600 py-2 px-5 rounded-full mt-3"
+            className="outline-none border-2 border-cyan-600 py-2 px-5 rounded-full mt-3"
             type="password"
             placeholder="Enter password"
             value={password}
@@ -42,10 +42,14 @@ const Login = ({ handleLogin }) => {
               setPassword(e.target.value);
             }}
           />
-          <button className="w-full outline-none border-none bg-emerald-600 py-2 px-5 rounded-full mt-3">
+          <button className="w-full outline-none border-none bg-cyan-600 py-2 px-5 rounded-full mt-3">
             Log in
           </button>
         </form>
+      </div>
+      <div className="p-2 border-2 border-amber-500 opacity-40 mt-10 rounded">
+        <p>Employee Login email: aarav@ems.com password:123</p>
+        <p>Admin Login email: admin@ems.com password:123</p>
       </div>
     </div>
   );

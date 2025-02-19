@@ -16,6 +16,16 @@ const employees = [
         failed: false,
       },
       {
+        taskTitle: "Bug Fixes",
+        taskDescription: "Resolve bugs reported in the last QA cycle.",
+        taskDate: "2025-02-02",
+        category: "Development",
+        active: true,
+        newTask: false,
+        completed: false,
+        failed: false,
+      },
+      {
         taskTitle: "Client Follow-up",
         taskDescription: "Email clients to confirm project requirements.",
         taskDate: "2025-02-03",
@@ -37,8 +47,8 @@ const employees = [
       },
     ],
     taskCount: {
-      total: 3,
-      active: 0,
+      total: 4,
+      active: 1,
       newTask: 1,
       completed: 1,
       failed: 1,
